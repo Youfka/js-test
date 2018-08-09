@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width">
+	<title>Test</title>
+</head>
+<body>
+	<div class="container">
+		<button type="button" class="button button--add js-open">Добавить нового студента</button>
+		<input type="search" class="input js-search" placeholder="Поиск по фамилии">
+		<div class="modal">
+			<form action="" class="form">
+				<div class="form__row">
+					<input type="text" class="input js-name" placeholder="Имя">
+				</div>
+				<div class="form__row">
+					<input type="text" class="input js-surname" placeholder="Фамилия">
+				</div>
+				<div class="form__row">
+					<input type="date" class="input js-date">
+				</div>
+				<div class="form__row">
+					<input type="text" class="input js-group" placeholder="Группа">
+				</div>
+				<div class="error"></div>
+				<button type="button" class="button button--add js-add">Добавить</button>
+				<button type="button" class="button button--cancel js-cancel">Отмена</button>
+			</form>
+		</div> 
+		<table class="table">
+			<tr>
+				<th></th>
+				<th>Имя</th>
+				<th>Фамилия</th>
+				<th class="js-sort-age">Возраст</th>
+				<th class="js-sort-group">Группа</th>
+				<th></th>
+			</tr>
+			<tr>
+				<td><input type="checkbox" name="checkbox" class="checkbox"></td>
+				<td class="js-table-name">Грид</td>
+				<td class="js-table-surname">Флексович</td>
+				<td class="js-table-age">55</td>
+				<td class="js-table-group">БР-2-17</td>
+				<td><button type="button" class="button js-open-change">Изменить</button></td>
+			</tr>
+			<tr>
+				<td><input type="checkbox" name="checkbox" class="checkbox"></td>
+				<td class="js-table-name">Чекбокс</td>
+				<td class="js-table-surname">Инпутов</td>
+				<td class="js-table-age">20</td>
+				<td class="js-table-group">ВАЛ-6-10</td>
+				<td><button type="button" class="button js-open-change">Изменить</button></td>
+			</tr>
+			<tr>
+				<td><input type="checkbox" name="checkbox" class="checkbox"></td>
+				<td class="js-table-name">Кнопка</td>
+				<td class="js-table-surname">Буттовна</td>
+				<td class="js-table-age">33</td>
+				<td class="js-table-group">ТУЙП-5-15</td>
+				<td><button type="button" class="button js-open-change">Изменить</button></td>
+			</tr>
+		</table>
+		<button type="button" class="button button--cancel delete">Удалить</button>
+	</div>
+
+
+</body>
+</html>

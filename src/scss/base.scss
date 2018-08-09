@@ -1,0 +1,96 @@
+* {
+	box-sizing: border-box;
+}
+body {
+	margin: 0;
+	font-family: Arial, sans-serif;
+}
+.container {
+	width: 800px;
+	margin: 0 auto;
+	padding: 20px;
+}
+.form {
+	&__row {
+		margin: 20px 0;
+		.input {
+			width: 100%;
+		}
+	}
+
+}
+
+.input {
+	height: 40px;
+	padding: 5px 10px;
+	border: 1px solid #888;
+}
+
+.table {
+	width: 100%;
+    border-spacing: 0;
+    border-collapse: collapse;
+	margin: 20px 0;
+	color: #0000aa;
+	th,td {
+		padding: 10px;
+		text-align: center;
+		border: 1px solid #888;	
+	}
+	th {
+		background-color: #eee;
+	}
+	tr:nth-child(odd) td{
+		background-color: #eee;
+	}
+	tr:nth-child(even) td{
+		background-color: #fff;
+	}
+	tr:hover td{
+		background-color: #f8fa8a;
+	}
+	tr.picked td {
+		background-color: #0000aa;
+		color: #fff;
+	}
+
+}
+
+.error {
+	margin-bottom: 10px;
+	color: red;
+}
+.button {
+	height: 40px;
+	cursor: pointer;
+	background-color: #ebd7ee;
+	padding: 10px 30px;
+	border: 1px solid #888;
+	&--add { 
+		background-color: #d7eed7;
+	}
+	&--cancel { 
+		background-color: #f2b8ca;
+	}
+}
+
+
+.modal {
+	width: 100%;
+	height: 100%;
+	background-color: rgba(136,136,136,0.7);
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+.form {
+    width: 500px;
+    background-color: #fff;
+    margin: 5% auto 0;
+    padding: 20px;
+}
+
+.js-sort-age,
+.js-sort-group {
+	cursor: pointer;
+}
